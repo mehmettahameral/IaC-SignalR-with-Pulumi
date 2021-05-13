@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IaC-SignalR-with-Pulumi", "IaC-SignalR-with-Pulumi.csproj", "{3CEF979D-8F12-46B9-B735-00D1606FFDF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CEF979D-8F12-46B9-B735-00D1606FFDF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CEF979D-8F12-46B9-B735-00D1606FFDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CEF979D-8F12-46B9-B735-00D1606FFDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CEF979D-8F12-46B9-B735-00D1606FFDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42F4065E-8D7A-462A-A8CD-649CDA7DC6B3}
+	EndGlobalSection
+EndGlobal

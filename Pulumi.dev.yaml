@@ -1,0 +1,3 @@
+config:
+  azure-native:location: uksouth
+  pulumi:template: azure-csharp
