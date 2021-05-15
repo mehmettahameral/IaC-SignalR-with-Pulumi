@@ -6,6 +6,7 @@ class MyStack : Stack
 {
     public const string _signalRResourceGroupName = "rgdevci";
     public const string _signalRName = "rgdevsignalr";
+
     public MyStack()
     {
         // Create an Azure Resource Group
