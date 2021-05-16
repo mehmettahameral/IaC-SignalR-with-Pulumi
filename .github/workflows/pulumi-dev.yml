@@ -1,23 +1,24 @@
 name: Pulumi
-on:
-  push:
-    branches:
-      - main
+on: [push, workflow_dispatch]
+
+env:
+  NETCORE_VERSION: ${{ secrets.NETCORE_VERSION }} #3.1
+  PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+  PULUMI_STACK_NAME: ${{ secrets.PULUMI_STACK_NAME }} #dev
+
 jobs:
   up:
-    name: Update
+    name: Pulumi up
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Setup DotNet
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 3.1
-      - name: Install pulumi
+          dotnet-version: ${{ env.NETCORE_VERSION }}
+      - name: Install pulumi and up
         uses: pulumi/action-install-pulumi-cli@v1.0.2
       - uses: pulumi/actions@v3
         with:
           command: up
-          stack-name: dev
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          stack-name: ${{ env.PULUMI_STACK_NAME}}
