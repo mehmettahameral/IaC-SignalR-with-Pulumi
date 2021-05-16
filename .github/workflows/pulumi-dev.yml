@@ -1,5 +1,20 @@
 name: Pulumi
-on: [push, workflow_dispatch]
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  # Also trigger on page_build, as well as release created events
+  page_build:
+  release:
+    types: # This configuration does not affect the page_build event above
+      - created
+  workflow_dispatch:
+    
 
 env:
   NETCORE_VERSION: ${{ secrets.NETCORE_VERSION }} #3.1
