@@ -35,5 +35,9 @@ jobs:
         uses: pulumi/action-install-pulumi-cli@v1.0.2
       - uses: pulumi/actions@v3
         with:
-          command: up
+          command: config set azure-native:clientId ${{ env.ARM_CLIENT_ID }}
+            && pulumi config set azure-native:clientSecret ${{ env.ARM_CLIENT_SECRET }} --secret 
+            && pulumi config set azure-native:tenantId ${{ env.ARM_TENANT_ID }}
+            && pulumi config set azure-native:subscriptionId ${{ env.ARM_SUBSCRIPTION_ID }}
+            && up
           stack-name: ${{ env.PULUMI_STACK_NAME}}
