@@ -1,3 +1,7 @@
 config:
+  azure-native:clientId: ${{ env.ARM_CLIENT_ID }}
+  azure-native:clientSecret: ${{ env.ARM_CLIENT_SECRET }}
   azure-native:location: uksouth
+  azure-native:subscriptionId: ${{ env.ARM_SUBSCRIPTION_ID }}
+  azure-native:tenantId: ${{ env.ARM_TENANT_ID }}
   pulumi:template: azure-csharp
