@@ -3,7 +3,7 @@
 Infrastructure-as-a-Code Azure SignalR Service by using Pulumi
 
 Pulumi up github action status:
-[![pulumi up](https://github.com/mehmettahameral/IaC-SignalR-with-Pulumi/actions/workflows/pulumi-dev.yml/badge.svg)](https://github.com/mehmettahameral/IaC-SignalR-with-Pulumi/actions/workflows/pulumi-dev.yml)
+[![pulumi up](https://github.com/mehmettahameral/IaC-SignalR-with-Pulumi/actions/workflows/pulumi-up-dev.yml/badge.svg)](https://github.com/mehmettahameral/IaC-SignalR-with-Pulumi/actions/workflows/pulumi-up-dev.yml)
 
 Pulumi destroy github action status:
 [![pulumi destory](https://github.com/mehmettahameral/IaC-SignalR-with-Pulumi/actions/workflows/pulumi-destroy-dev.yml/badge.svg)](https://github.com/mehmettahameral/IaC-SignalR-with-Pulumi/actions/workflows/pulumi-destroy-dev.yml)
